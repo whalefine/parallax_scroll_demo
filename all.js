@@ -33,11 +33,11 @@ window.addEventListener('scroll',function(){
   mountain.style.transform = `translateY(${value * 0.15}px)`;
   moon.style.transform = `translate(${value * 0.5}px,${value * 1}px)`;
   title.style.transform = `translateY(${value * 0.8}px)`;
+  console.log(window.scrollY);
   if(value <= 100){
     giveClass('item');
   }
   else if(value > 250){
-    // console.log(item);
     giveClass('item active');
   }
   // console.log(item[0].getAttribute('class')==='item active');
